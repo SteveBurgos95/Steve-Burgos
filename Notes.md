@@ -1,5 +1,26 @@
 # Shell Programming
 
-## a) History of Linux and shell
-## b) Getting Started With Shell Programming
-## c) The Shell Variables and Environment
+
+## **History of Linux and shell**
+    
+## **Getting Started With Shell Programming**
+### **Introduction to the Bash Shell**
+A command line is a text user interface. One can use such an interface to provide instructions to a Linux Power computer. Our text user interfeace is GitBash
+* Developed by [GNU](https://bash.cyberciti.biz/guide/GNU) project
+* The default Linux shell on most Linux distributions
+* Backward-compatible with the original sh UNIX shell
+* The ```$``` is the command line prompt when bash is waiting for a command from the user. We typically call this the command prompt or shell prompt. If you are a root user the default prompt will be ```#```.
+### **Shell Commands**
+There are two types of commands for bash shell
+*Internal commans(builtins) = part of the shell itself
+*External commands - seperate binaries stored in /sbin, /usr/sbin, /usr/bin, /bin, or /usr/local/bin directories
+
+## **The Shell Variables and Environment**
+
+
+
+References
+
+https://bash.cyberciti.biz/guide/Main_Page
+
+https://www.tutorialspoint.com/unix/shell_scripting.htm
