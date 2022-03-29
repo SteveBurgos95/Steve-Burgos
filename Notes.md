@@ -1,8 +1,27 @@
 # Shell Programming
 
 
+<<<<<<< HEAD
 ## **History of Linux and shell**
 <br></br>
+=======
+## **History of Linux and Shell**
+### **Linux**
+
+* Linux first created in 1991 as a project to create a free operating system by Finnish student Linus Torvalds.
+* It is now over 23 million lines of code under the General public license.
+* Resembled the minix system in the file layout, and became popularized with the porting of X Window System GUI.
+* Originally named Freax and changed to Linux and the mascot is a penguin.
+* The largest part of the work on Linux is performed by the community.
+
+### **Shell**
+
+* In 1971 Ken Thompson released the first Unix shell-the Thompson shell.
+* In 1977 Stephen Bourne released the Bourne shell, meant to solve the scripting limitations of the Thompson shell.
+* In 1989 Brian Fox released the Bourne-Again shell (Bash), in order to create a competitive and free software.
+* Bash became the main open source scripting language as Linux became the primary open source operating system.
+    
+>>>>>>> 5ac8c8b2cb6853e50fa42af57e32c02b75eabe0a
 ## **Getting Started With Shell Programming**
 
 ### **Introduction to the Bash Shell**
