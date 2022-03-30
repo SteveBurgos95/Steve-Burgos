@@ -1,11 +1,9 @@
 # Shell Programming
 
+<details><summary>HISTORY OF LINUX AND SHELL</summary>
 
-<<<<<<< HEAD
-## **History of Linux and shell**
-<br></br>
-=======
 ## **History of Linux and Shell**
+
 ### **Linux**
 
 * Linux first created in 1991 as a project to create a free operating system by Finnish student Linus Torvalds.
@@ -20,12 +18,11 @@
 * In 1977 Stephen Bourne released the Bourne shell, meant to solve the scripting limitations of the Thompson shell.
 * In 1989 Brian Fox released the Bourne-Again shell (Bash), in order to create a competitive and free software.
 * Bash became the main open source scripting language as Linux became the primary open source operating system.
-    
->>>>>>> 5ac8c8b2cb6853e50fa42af57e32c02b75eabe0a
-## **Getting Started With Shell Programming**
-
-### **Introduction to the Bash Shell**
+</details>
 <br></br>
+<details><summary>INTRODUCTION TO THE BASH SHELL</summary>
+
+## **Introduction to the Bash Shell**
 A command line is a text user interface. One can use such an interface to provide instructions to a Linux Power computer. Our text user interfeace is GitBash
 * Developed by [GNU](https://bash.cyberciti.biz/guide/GNU) project
 * The default Linux shell on most Linux distributions
@@ -33,7 +30,6 @@ A command line is a text user interface. One can use such an interface to provid
 * The ```$``` is the command line prompt when bash is waiting for a command from the user. We typically call this the command prompt or shell prompt. If you are a root user the default prompt will be ```#```
 <br></br>
 ### **Shell Commands**
-<br></br>
 There are two types of commands for bash shell
 * Internal commans(builtins) = part of the shell itself
 * External commands - seperate binaries stored in /sbin, /usr/sbin, /usr/bin, /bin, or /usr/local/bin directories
@@ -51,10 +47,15 @@ The Bash shell understands the following commands:
 * **Functions**
 * **Built in** such as ```pwd```
 * **Files** such as ```/bin/date```
-## **The Shell Variables and Environment**
+
+</details>
 <br></br>
+<details><summary>THE SHELL VARIABLES AND ENVIRONMENT</summary>
 
+## **The Shell Variables and Environment**
+</details>
 
+<br></br>
 References
 
 https://bash.cyberciti.biz/guide/Main_Page
