@@ -4,12 +4,12 @@ read -p "Your Number " number
 
 if test $((number % 3)) -eq 0
 then
-    echo Divisibile by 3
+    printf fizz
 fi
 
 if test $((number % 5)) -eq 0
 then
-    echo Divisibile by 5
+    printf buzz
 fi
 
 
