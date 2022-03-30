@@ -4,8 +4,6 @@
 
 ## **History of Linux and Shell**
 
-### **Linux**
-
 * Linux first created in 1991 as a project to create a free operating system by Finnish student Linus Torvalds.
 * It is now over 23 million lines of code under the General public license.
 * Resembled the minix system in the file layout, and became popularized with the porting of X Window System GUI.
