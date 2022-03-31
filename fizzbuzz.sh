@@ -8,8 +8,9 @@ do
     read -p "Please choose a number between 1 and 20: " number
 done
 
-#Prints FizzBuzz 
 
+
+#Prints FizzBuzz 
 if test $((number % 3)) -eq 0
 then
     printf fizz
