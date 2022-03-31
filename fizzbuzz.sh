@@ -9,14 +9,12 @@ do
 done
 
 #Prints FizzBuzz 
-if test $number -gt 0 && test $number -lt 21
+
+if test $((number % 3)) -eq 0
 then
-    if test $((number % 3)) -eq 0
-    then
-        printf fizz
-    fi
-    if test $((number % 5)) -eq 0
-    then
-        printf buzz
-     fi
+    printf fizz
+fi
+if test $((number % 5)) -eq 0
+then
+    printf buzz
 fi
