@@ -1,10 +1,14 @@
 
+#Gets a number from user
 read -p "Your Number " number
+
+#Checks to see if number is between 1 and 20
 while  test $number -lt 1 || test $number -gt 20 
 do
     read -p "Please choose a number between 1 and 20: " number
 done
 
+#Prints FizzBuzz 
 if test $number -gt 0 && test $number -lt 21
 then
     if test $((number % 3)) -eq 0
