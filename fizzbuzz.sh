@@ -1,4 +1,9 @@
+
 read -p "Your Number " number
+while  test $number -lt 1 || test $number -gt 20 
+do
+    read -p "Please choose a number between 1 and 20: " number
+done
 
 if test $number -gt 0 && test $number -lt 21
 then
@@ -10,5 +15,4 @@ then
     then
         printf buzz
      fi
-
 fi
