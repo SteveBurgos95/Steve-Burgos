@@ -1,21 +1,35 @@
+#!/bin/bash
 
-#Gets a number from user
-read -p "Your Number " number
+#INPUT [uncomment & modify if required]
+a=0     #will be used for first number of fibonacci sequence
+b=1     #will be used for second number of fibonacci sequence
+s=0     #will be used for output initial value
+sampleInput=0
+read sampleInput
 
-#Checks to see if number is between 1 and 20
-while  test $number -lt 1 || test $number -gt 20 
+#write your Logic here:
+
+#Find Fibonacci Number
+for((i=0; i<(sampleInput-1); i++))
 do
-    read -p "Please choose a number between 1 and 20: " number
+    fn=$((a+b))
+    a=$b
+    b=$fn
 done
 
 
+# Add the digits together
+while [ $fn -gt 0 ]
+do
+    # get remainder
+    k=$(( $fn % 10 ))
 
-#Prints FizzBuzz 
-if test $((number % 3)) -eq 0
-then
-    printf fizz
-fi
-if test $((number % 5)) -eq 0
-then
-    printf buzz
-fi
+    # get next digit
+    fn=$(( $fn / 10 ))
+
+    # calculate sum of digits
+    s=$(( $s + $k))
+done
+
+#OUTPUT [uncomment & modify if required]
+echo $s
