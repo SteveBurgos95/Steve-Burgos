@@ -26,7 +26,7 @@ static string reverseCharacterArray(char[] x, int n)
     char[] arr = new char[n];
     String newString;
 
-    for(int i = 0; i < (n-1); i++)
+    for(int i = 0; i < n; i++)
     {
 
         arr[arr.Length-1 - i] = x[i];
@@ -39,14 +39,12 @@ static string reverseCharacterArray(char[] x, int n)
 
 static bool palindromeCheck(string x)
 {
+    x = x.ToLower();
     var xArray = x.ToCharArray();
 
 
-    var reverseXArray = reverseCharacterArray(xArray, xArray.Length);
-  
+    string y = reverseCharacterArray(xArray, xArray.Length);
 
-    x = new String(xArray);
-    String y = new String(reverseXArray);
 
     if (x==y)
     {
@@ -94,7 +92,7 @@ Console.Write("Please enter string 2: ");
 String stringTwo = Console.ReadLine();
 
 if(palindromeCheck(stringOne)){
-    Console.WriteLine("This is a palindrome!");
+    Console.WriteLine($"{stringOne} is a palindrome!");
 }
 else
 {
