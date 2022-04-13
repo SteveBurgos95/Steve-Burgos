@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
-static void bubbleSortString(char[] x, int n)
+ void bubbleSortString(char[] x, int n)
 {
     //var arr = x.ToCharArray();
     char temp;
@@ -21,7 +21,7 @@ static void bubbleSortString(char[] x, int n)
     }
 }
 
-static string reverseCharacterArray(char[] x, int n)
+ string reverseCharacterArray(char[] x, int n)
 {
     char[] arr = new char[n];
     String newString;
@@ -37,7 +37,7 @@ static string reverseCharacterArray(char[] x, int n)
     return newString;
 }
 
-static bool palindromeCheck(string x)
+ bool palindromeCheck(string x)
 {
     x = x.ToLower();
     var xArray = x.ToCharArray();
@@ -56,7 +56,7 @@ static bool palindromeCheck(string x)
     }
 }
 
-static bool anigramCheck(string x, string y)
+ bool anigramCheck(string x, string y)
 {
 
     x = x.ToLower();
