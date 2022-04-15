@@ -1,12 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// requests character array and an int that represnets length of that character array and sorts the character array using bubble sort algorithm
+void bubbleSortString(char[] x, int n)
 
-
- void bubbleSortString(char[] x, int n)
 {
     //var arr = x.ToCharArray();
     char temp;
 
-     // Sorting strings using bubble sort
+     // Sorting characters using bubble sort
     for (int j = 0; j < n - 1; j++)
     {
         for (int i = j + 1; i < n; i++)
@@ -21,7 +20,8 @@
     }
 }
 
- string reverseCharacterArray(char[] x, int n)
+// Requests array of characters and a an int that represents length of that character array and returns reverse string of that character array
+string reverseCharacterArray(char[] x, int n)
 {
     char[] arr = new char[n];
     String newString;
@@ -37,7 +37,8 @@
     return newString;
 }
 
- bool palindromeCheck(string x)
+// Requests string and returns true or false for Palindrome
+bool palindromeCheck(string x)
 {
     x = x.ToLower();
     var xArray = x.ToCharArray();
@@ -56,7 +57,8 @@
     }
 }
 
- bool anigramCheck(string x, string y)
+// Requests two string variables and returns true or false values for whether they are anigrams
+bool anigramCheck(string x, string y)
 {
 
     x = x.ToLower();
@@ -74,14 +76,13 @@
 
     // if/else statement to check if x == y
     if(x == y){
-     return true;
+        return true;
     }
     else
     {
         return false;
     }
 }
-
 
 // Request for the first String
 Console.Write("Please enter string 1: ");
@@ -100,13 +101,12 @@ else
 }
 
 if(palindromeCheck(stringTwo)){
-    Console.WriteLine("This is a palindrome!");
+    Console.WriteLine($"{stringTwo} is a palindrome!");
 }
 else
 {
     Console.WriteLine($"Sorry, {stringTwo} is not a palindrome");
 }
-
 
 if(anigramCheck(stringOne, stringTwo)){
     Console.WriteLine($"{stringOne} & {stringTwo} are aningrams!");
