@@ -2,9 +2,22 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "RestaurantModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/RestaurantModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestaurantModels.dll": {}
+        }
+      },
       "UserModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "RestaurantModels": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/UserModels.dll": {}
         },
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "RestaurantModels/1.0.0": {
+      "type": "project",
+      "path": "../Restaurant/RestaurantModels.csproj",
+      "msbuildProject": "../Restaurant/RestaurantModels.csproj"
+    },
     "UserModels/1.0.0": {
       "type": "project",
       "path": "../User/UserModels.csproj",
@@ -23,6 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "RestaurantModels >= 1.0.0",
       "UserModels >= 1.0.0"
     ]
   },
@@ -61,6 +80,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Restaurant Review\\Restaurant\\RestaurantModels.csproj": {
+              "projectPath": "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Restaurant Review\\Restaurant\\RestaurantModels.csproj"
+            },
             "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Restaurant Review\\User\\UserModels.csproj": {
               "projectPath": "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Restaurant Review\\User\\UserModels.csproj"
             }

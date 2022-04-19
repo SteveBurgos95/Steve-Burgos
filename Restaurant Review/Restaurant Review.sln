@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User", "User\User.csproj", "{019536ED-138F-40DE-A5F7-99D1078E445F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserModels", "User\UserModels.csproj", "{019536ED-138F-40DE-A5F7-99D1078E445F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant", "Restaurant\Restaurant.csproj", "{19EB0148-071E-4887-891E-F6F1047D9045}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantModels", "Restaurant\RestaurantModels.csproj", "{19EB0148-071E-4887-891E-F6F1047D9045}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Review", "Review\Review.csproj", "{BC61F86F-55EF-4D0E-9257-8F8EB8E077DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReviewModels", "Review\ReviewModels.csproj", "{BC61F86F-55EF-4D0E-9257-8F8EB8E077DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
