@@ -1,0 +1,15 @@
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\bin\Debug\net6.0\RestaurantBL.exe
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\bin\Debug\net6.0\RestaurantBL.deps.json
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\bin\Debug\net6.0\RestaurantBL.runtimeconfig.json
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\bin\Debug\net6.0\RestaurantBL.dll
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\bin\Debug\net6.0\RestaurantBL.pdb
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\obj\Debug\net6.0\RestaurantBL.csproj.AssemblyReference.cache
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\obj\Debug\net6.0\RestaurantBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\obj\Debug\net6.0\RestaurantBL.AssemblyInfoInputs.cache
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\obj\Debug\net6.0\RestaurantBL.AssemblyInfo.cs
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\obj\Debug\net6.0\RestaurantBL.csproj.CoreCompileInputs.cache
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\obj\Debug\net6.0\RestaurantBL.dll
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\obj\Debug\net6.0\refint\RestaurantBL.dll
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\obj\Debug\net6.0\RestaurantBL.pdb
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\obj\Debug\net6.0\RestaurantBL.genruntimeconfig.cache
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantBL\obj\Debug\net6.0\ref\RestaurantBL.dll

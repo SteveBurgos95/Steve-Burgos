@@ -1,0 +1,5 @@
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantModels\obj\Debug\net6.0\RestaurantModels.csproj.AssemblyReference.cache
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantModels\obj\Debug\net6.0\RestaurantModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantModels\obj\Debug\net6.0\RestaurantModels.AssemblyInfoInputs.cache
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantModels\obj\Debug\net6.0\RestaurantModels.AssemblyInfo.cs
+C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review\RestaurantModels\obj\Debug\net6.0\RestaurantModels.csproj.CoreCompileInputs.cache

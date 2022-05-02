@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Restaurant Review\\Restaurant\\RestaurantModels.csproj": {}
+    "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Project 0\\Restaurant Review\\Restaurant\\RestaurantModels.csproj": {}
   },
   "projects": {
-    "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Restaurant Review\\Restaurant\\RestaurantModels.csproj": {
+    "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Project 0\\Restaurant Review\\Restaurant\\RestaurantModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Restaurant Review\\Restaurant\\RestaurantModels.csproj",
+        "projectUniqueName": "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Project 0\\Restaurant Review\\Restaurant\\RestaurantModels.csproj",
         "projectName": "RestaurantModels",
-        "projectPath": "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Restaurant Review\\Restaurant\\RestaurantModels.csproj",
+        "projectPath": "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Project 0\\Restaurant Review\\Restaurant\\RestaurantModels.csproj",
         "packagesPath": "C:\\Users\\burgo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Restaurant Review\\Restaurant\\obj\\",
+        "outputPath": "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Project 0\\Restaurant Review\\Restaurant\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
