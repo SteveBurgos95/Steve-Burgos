@@ -27,6 +27,14 @@ while (repeat)
             Log.Debug("Displaying Main menu to the user");
             menu = new RestaurantMainMenu();
             break;
+        case "AdminView":
+            Log.Debug("Displaying Main menu to the user");
+            menu = new AdminView();
+            break;
+        case "UserView":
+            Log.Debug("Displaying Main menu to the user");
+            menu = new RestaurantMainMenu();
+            break;
 
         default:
             Console.WriteLine("View does not exist");

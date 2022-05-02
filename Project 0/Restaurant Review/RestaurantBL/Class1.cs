@@ -1,4 +1,5 @@
-﻿/*namespace RestaurantBL;
+﻿using RestaurantUI;
+/*namespace RestaurantBL;
 
 
 using System;
@@ -50,7 +51,3 @@ namespace sqltest
 
   string connectionStringFilePath = "C:\Users\burgo\Desktop\Revature\Steve-Burgos\Project 0\Restaurant Review";
 */
-static void Main(string[] args)
-{
-    ...
-    }

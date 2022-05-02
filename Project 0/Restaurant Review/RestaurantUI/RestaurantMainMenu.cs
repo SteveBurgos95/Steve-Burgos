@@ -27,9 +27,9 @@ namespace RestaurantUI
             switch (userInput)
             {
                 case "0":
-                    return "GoToAdminMenu";
+                    return "AdminView";
                 case "1":
-                    return "GoToRegularMenu";
+                    return "Userview";
                 default:
                     Console.WriteLine("Please input a valid response");
                     Console.WriteLine("Please press <enter> to continue");

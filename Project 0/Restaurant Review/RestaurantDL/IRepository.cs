@@ -10,8 +10,3 @@ namespace RestaurantDL
     {
     }
 }
-
-static void Main(string[] args)
-{
-    ...
-    }
