@@ -1,1 +1,5 @@
 2022-05-02 15:21:07.116 -05:00 [INF] Displaying Admin menu to the user
+2022-05-02 16:42:15.579 -05:00 [INF] Displaying Admin menu to the user
+2022-05-02 16:42:23.271 -05:00 [INF] Displaying Main menu to the user
+2022-05-02 16:42:25.046 -05:00 [INF] Displaying UserView menu to the user
+2022-05-02 16:42:31.382 -05:00 [INF] Displaying Main menu to the user
