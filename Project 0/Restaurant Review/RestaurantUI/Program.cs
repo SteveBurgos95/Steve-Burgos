@@ -6,8 +6,8 @@ using RestaurantUI;
 
 //create and configure our logger
 Log.Logger = new LoggerConfiguration()
-    .WriteTo.Console().MinimumLevel.Debug()
-    .WriteTo.File("./Logs/user.txt").MinimumLevel.Debug().MinimumLevel.Information()// we want to save the ;ogs in this file
+    //.WriteTo.Console().MinimumLevel.Debug()
+    .WriteTo.File("./Logs/user.txt").MinimumLevel.Debug().MinimumLevel.Information()// we want to save the logs in this file
     .CreateLogger();
 
 
@@ -25,15 +25,18 @@ while (repeat)
 
         case "MainMenu":
             Log.Debug("Displaying Main menu to the user");
+            Log.Information("Displaying Main menu to the user");
             menu = new RestaurantMainMenu();
             break;
         case "AdminView":
-            Log.Debug("Displaying Main menu to the user");
+            Log.Debug("Displaying Admin menu to the user");
+            Log.Information("Displaying Admin menu to the user");
             menu = new AdminView();
             break;
         case "UserView":
-            Log.Debug("Displaying Main menu to the user");
-            menu = new RestaurantMainMenu();
+            Log.Debug("Displaying UserView menu to the user");
+            Log.Information("Displaying UserView menu to the user");
+            menu = new UserView();
             break;
 
         default:
