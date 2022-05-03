@@ -882,6 +882,19 @@
             "rid": "win"
           }
         }
+      },
+      "RestaurantModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Serilog.AspNetCore": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RestaurantModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestaurantModels.dll": {}
+        }
       }
     }
   },
@@ -3002,11 +3015,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "RestaurantModels/1.0.0": {
+      "type": "project",
+      "path": "../RestaurantModels/RestaurantModels.csproj",
+      "msbuildProject": "../RestaurantModels/RestaurantModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.Data.SqlClient >= 4.1.0",
+      "RestaurantModels >= 1.0.0",
       "Serilog.AspNetCore >= 5.0.0"
     ]
   },
@@ -3044,7 +3063,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Project 0\\Restaurant Review\\RestaurantModels\\RestaurantModels.csproj": {
+              "projectPath": "C:\\Users\\burgo\\Desktop\\Revature\\Steve-Burgos\\Project 0\\Restaurant Review\\RestaurantModels\\RestaurantModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

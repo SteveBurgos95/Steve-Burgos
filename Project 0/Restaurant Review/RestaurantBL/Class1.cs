@@ -1,4 +1,6 @@
-﻿using RestaurantUI;
+﻿static void Main()
+{
+}
 /*namespace RestaurantBL;
 
 

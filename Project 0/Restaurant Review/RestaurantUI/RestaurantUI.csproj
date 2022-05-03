@@ -11,4 +11,9 @@
     <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RestaurantBL\RestaurantBL.csproj" />
+    <ProjectReference Include="..\RestaurantDL\RestaurantDL.csproj" />
+  </ItemGroup>
+
 </Project>

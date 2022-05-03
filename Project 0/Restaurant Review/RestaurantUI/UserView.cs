@@ -31,7 +31,7 @@ namespace RestaurantUI
                 case "0":
                     return "Userview";
                 case "1":
-                    return "Userview";
+                    return "AddReview";
                 default:
                     Console.WriteLine("Please input a valid response");
                     Console.WriteLine("Please press <enter> to continue");

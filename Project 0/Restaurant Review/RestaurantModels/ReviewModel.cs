@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantModels
 {
-    class ReviewModel
+    public class ReviewModel
     {
         public int ReviewID { get; set; }
         public int RestaurantID { get; set; }
