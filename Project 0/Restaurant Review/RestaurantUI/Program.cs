@@ -4,7 +4,7 @@ using RestaurantDL;
 using RestaurantBL;
 
 
-string connectionStringFilePath = "../../../../sensitive.txt";
+string connectionStringFilePath = "../sensitive.txt";
 string connectionString = File.ReadAllText(connectionStringFilePath);
 
 //create and configure our logger

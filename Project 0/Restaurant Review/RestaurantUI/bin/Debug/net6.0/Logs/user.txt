@@ -45,3 +45,13 @@
 2022-05-02 21:30:45.874 -05:00 [INF] Displaying LoginMenu menu to the user
 2022-05-02 21:30:47.630 -05:00 [INF] Displaying Login menu to the user
 2022-05-02 21:31:00.184 -05:00 [INF] Displaying Admin menu to the user
+2022-05-02 21:52:55.693 -05:00 [INF] Displaying Login menu to the user
+2022-05-02 21:53:12.379 -05:00 [INF] Displaying Admin menu to the user
+2022-05-02 21:55:57.214 -05:00 [INF] Displaying NewUser menu to the user
+2022-05-02 21:56:06.539 -05:00 [INF] Displaying LoginMenu menu to the user
+2022-05-02 21:56:10.278 -05:00 [INF] Displaying Login menu to the user
+2022-05-02 21:56:15.851 -05:00 [INF] Displaying Admin menu to the user
+2022-05-02 21:56:25.368 -05:00 [INF] Displaying Main menu to the user
+2022-05-02 21:56:28.390 -05:00 [INF] Displaying UserView menu to the user
+2022-05-02 21:56:40.710 -05:00 [INF] Displaying AddReview menu to the user
+2022-05-02 21:56:40.809 -05:00 [INF] Displaying UserView menu to the user

@@ -16,7 +16,7 @@ namespace RestaurantUI
             string? login = Console.ReadLine();
 
 
-            Console.WriteLine("Password");
+            Console.Write("Password");
             string? password = Console.ReadLine();
 
             Console.Write("Enter <0> for AdminView or <1> for UserView: ");
