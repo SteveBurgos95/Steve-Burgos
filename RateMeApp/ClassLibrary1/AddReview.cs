@@ -3,38 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DL;
 
 namespace UI
 {
-    public class AddReview
+    public class AddReview : UIMenus
     {
         public void Display()
         {
+            const string connectionStringFilePath = "../../../../connections.txt";
+            string connectionString = File.ReadAllText(connectionStringFilePath);
 
-            Console.Write("Enter <0> for AdminView or <1> for UserView: ");
+            Console.WriteLine("Enter <back> to go back ");
+            Console.Write("Enter restaurant name: ");
+            string name = Console.ReadLine();
+            int myID = (int)SQLDataLogic.getRestaurantID(connectionString, name);
+            Console.Write("What score will you give between 1-5 ");
+            string score = Console.ReadLine();
+            while (score != "1" && score != "2" && score != "3" && score != "4" && score != "5")
+            {
+                Console.Clear();
+                Console.WriteLine("Enter <back> to go back ");
+                Console.WriteLine("Enter restaurant name: ");
+                Console.Write("Give a valid input between 1-5: ");
+                score = Console.ReadLine();
+            }
+            Console.Write("Write a review: ");
+            string review = Console.ReadLine();
+            
+
+            SQLDataLogic.AddReview(connectionString, myID.ToString(), score, review); ;
+
 
         }
 
         public string UserChoice()
         {
-            // Console.ReadLine returns null if redirecting from a file and the file ends
-            if (Console.ReadLine() is not string userInput)
-                throw new InvalidDataException("end of input");
 
-            switch (userInput)
-            {
-                case "0":
-
-                    return "Login";
-                case "1":
-
-                    return "UserView";
-                default:
-                    Console.WriteLine("Please input a valid response");
-                    Console.WriteLine("Please press <enter> to continue");
-                    Console.ReadLine();
-                    return "Login";
-            }
+            Console.Clear();
+            return "UserView";
         }
 
     }

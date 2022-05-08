@@ -14,8 +14,7 @@ public class SQLDataLogic
     }
 
 
-    // Method that takes in a connection string for a sql server a table name within
-    // that sql server and returns a List<Object> with the List<Objects>
+  
     static public List<Object> GetTable(string connectionString, string tableName)
     {
 
@@ -94,7 +93,7 @@ public class SQLDataLogic
     static public void SearchTable(string connectionString, string tableName, string columnName, string searchItem)
     {
 
-        string commandString = $"SELECT* FROM [{tableName}] WHERE [{columnName}] LIKE '{searchItem}%'";
+        string commandString = $"SELECT* FROM [{tableName}] WHERE [{columnName}] like '{searchItem}%'";
 
         using SqlConnection connection = new(connectionString);
         connection.Open();
@@ -113,7 +112,45 @@ public class SQLDataLogic
         {
             while (reader.Read())
             {
-                for (int i = 0; i < reader.FieldCount - 1; i++)
+                for (int i = 0; i < reader.FieldCount; i++)
+                {
+                    //users.Add(reader[i]);
+                    Console.Write(reader[i] + "||");
+                }
+                //Console.WriteLine(reader);
+                Console.WriteLine();
+                Console.WriteLine("-------------------------------------------------------------------------------------------");
+            }
+        }
+        //myTable.ForEach(x => Console.WriteLine(x));
+
+        //Console.WriteLine(commandString);
+        // return myTable;
+    }
+
+    static public void SearchTableWithIntegerReviews(string connectionString, string tableName, string columnName, string searchItem)
+    {
+
+        string commandString = $"SELECT score, review FROM [{tableName}] WHERE [{columnName}] LIKE {searchItem}";
+
+        using SqlConnection connection = new(connectionString);
+        connection.Open();
+        using SqlCommand command = new(commandString, connection);
+        //Console.WriteLine(command);
+        using SqlDataReader reader = command.ExecuteReader();
+
+
+
+
+        /// List<Object> myTable;
+
+        // List<Object> myTable = new List<Object>();
+
+        if (reader.HasRows)
+        {
+            while (reader.Read())
+            {
+                for (int i = 0; i < reader.FieldCount; i++)
                 {
                     //users.Add(reader[i]);
                     Console.Write(reader[i] + "||");
@@ -190,7 +227,7 @@ public class SQLDataLogic
     {
         string commandString = $"Insert into users ([first name], [last name], [email], [phone], [password], [admin]) Values ('{firstName}', '{lastName}', '{email}', '{phone}', '{password}', 1)";
 
-        object value = new object();
+       
 
 
         using SqlConnection connection = new(connectionString);
@@ -201,21 +238,85 @@ public class SQLDataLogic
     }
 
 
-
-}
-    /*
-    static public void AddReview(string connectionString, string name, string address, string searchItem)
+    static public object getRestaurantID(string connectionString, string name)
     {
+        string commandString = $"Select ID from Restaurants where [Name] = '{name}'";
 
-        string commandString = $"INSERT INTO Review ([Name], [Address], [City],[State], [Zip], [Country], [Phone],[Email], [Website]) VALUES('Happy Lamb Hot Pot', '240 Legacy Dr #116', 'Plano', 'TX', '75023', 'USA', '9725758887', 'https://client.minitable.net/c_reservation?sid=sf3ad5ceda60b906f67c05387e759ce1c')";
+        object value = new object();
+
 
         using SqlConnection connection = new(connectionString);
         connection.Open();
         using SqlCommand command = new(commandString, connection);
-        Console.WriteLine(command);
+        //Console.WriteLine(command);
         using SqlDataReader reader = command.ExecuteReader();
 
+        if (reader.HasRows)
+        {
+            while (reader.Read())
+            {
+                value = reader[0];
+                //Console.WriteLine(value);
+
+                //Console.WriteLine(reader);
+                //Console.WriteLine();
+            }
+        }
+
+        return value;
 
     }
 
-    */
+
+    static public void AddReview(string connectionString, string restaurant, string score, string review)
+    {
+        string commandString = $"Insert Into Reviews (restaurant, score, review) values({restaurant},{score},'{review}')";
+
+
+
+
+        using SqlConnection connection = new(connectionString);
+        connection.Open();
+        using SqlCommand command = new(commandString, connection);
+        //Console.WriteLine(command);
+        using SqlDataReader reader = command.ExecuteReader();
+    }
+
+    static public void getRestaurantAverageRating(string connectionString, string rating)
+    {
+        string commandString = $"Select* from restaurants where (SELECT avg(reviews.id) FROM restaurants INNER JOIN reviews ON restaurants.ID = reviews.restaurant) >= {rating}";
+
+        object value = new object();
+
+
+        using SqlConnection connection = new(connectionString);
+        connection.Open();
+        using SqlCommand command = new(commandString, connection);
+        //Console.WriteLine(command);
+        using SqlDataReader reader = command.ExecuteReader();
+
+        if (reader.HasRows)
+        {
+            while (reader.Read())
+            {
+                for (int i = 0; i < reader.FieldCount; i++)
+                {
+                    //users.Add(reader[i]);
+                    Console.WriteLine(reader[i]);
+                    Console.WriteLine("-------------------------------------------------------------------------------------------------------");
+                    
+
+                }
+                //Console.WriteLine(reader);
+                Console.WriteLine();
+                Console.WriteLine("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||");
+
+            }
+        }
+
+     
+
+    }
+
+}
+

@@ -24,8 +24,7 @@ namespace UI
                 Console.WriteLine("Enter <2> to search for a restaurant");
                
                 Console.WriteLine("Enter <3> to search reviews of restaurants");
-                
-                Console.WriteLine("Enter <4> to search users");
+
                 
                 Console.WriteLine("||||||||||||||||||||||||||||||||||||||||||");
 
@@ -43,8 +42,8 @@ namespace UI
                 switch (userInput)
                 {
                     case "0":
-
-                        return "Login";
+                        Console.Clear();
+                        return "AddReview";
                     case "1":
                         Console.Clear();
                         SQLDataLogic.GetTable(connectionString, "Restaurants");
@@ -52,9 +51,15 @@ namespace UI
                         Console.WriteLine("||||||||||||||||||||||||||||||||||||||||||");
 
                         return "UserView";
-                    case "logout":
+                    case "2":
                         Console.Clear();
-                        return "Login";
+                        return "SearchRestaurant";
+                    case "3":
+                        Console.Clear();
+                        return "SearchReviews";
+                    case "logout":
+                            Console.Clear();
+                            return "MainMenu";
                     default:
                         Console.WriteLine("Please input a valid response");
                         Console.WriteLine("Please press <enter> to continue");

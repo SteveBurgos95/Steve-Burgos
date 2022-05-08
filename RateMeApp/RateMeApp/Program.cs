@@ -65,7 +65,21 @@ while (repeat)
           //  Log.Information("Displaying NewUser menu to the user");
             menu = new AddUser();
             break;
-
+        case "AddReview":
+            //  Log.Debug("Displaying NewUser menu to the user");
+            //  Log.Information("Displaying NewUser menu to the user");
+            menu = new AddReview();
+            break;
+        case "SearchReviews":
+            //  Log.Debug("Displaying NewUser menu to the user");
+            //  Log.Information("Displaying NewUser menu to the user");
+            menu = new SearchReviews();
+            break;
+        case "SearchRestaurant":
+            //  Log.Debug("Displaying NewUser menu to the user");
+            //  Log.Information("Displaying NewUser menu to the user");
+            menu = new SearchRestaurant();
+            break;
         default:
             Console.WriteLine("View does not exist");
             Console.WriteLine("Please press <enter> to continue");
