@@ -11,7 +11,7 @@ namespace UI
     {
         public void Display()
         {
-            const string connectionStringFilePath = "../../../../connections.txt";
+            const string connectionStringFilePath = "../connections.txt";
             string connectionString = File.ReadAllText(connectionStringFilePath);
             Console.WriteLine("Enter <logout> to logout ");
 
@@ -24,7 +24,7 @@ namespace UI
 
         public string UserChoice()
         {
-            const string connectionStringFilePath = "../../../../connections.txt";
+            const string connectionStringFilePath = "../connections.txt";
             string connectionString = File.ReadAllText(connectionStringFilePath);
 
             if (Console.ReadLine() is not string userInput)

@@ -15,7 +15,7 @@ namespace UI
         string adminValue = "";
         public void Display()
         {
-            const string connectionStringFilePath = "../../../../connections.txt";
+            const string connectionStringFilePath = "../connections.txt";
             string connectionString = File.ReadAllText(connectionStringFilePath);
 
             Console.Write("Login: ");

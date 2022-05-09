@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateMeApp", "RateMeApp\RateMeApp.csproj", "{9BBB825E-6DB0-44D2-B515-B63DFB0CD2E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RateMeApp", "RateMeApp\RateMeApp.csproj", "{9BBB825E-6DB0-44D2-B515-B63DFB0CD2E9}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1F75DC1D-6E6C-4545-B76C-833BFE7EF4DD} = {1F75DC1D-6E6C-4545-B76C-833BFE7EF4DD}
 		{360117B1-04EB-4D58-AA9B-C1BBC453AEE9} = {360117B1-04EB-4D58-AA9B-C1BBC453AEE9}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL", "DL\DL.csproj", "{360117B1-04EB-4D58-AA9B-C1BBC453AEE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DL", "DL\DL.csproj", "{360117B1-04EB-4D58-AA9B-C1BBC453AEE9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{289842A7-D184-4554-80F0-00DA33237AC3}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,11 +17,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		connections.txt = connections.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{D32D914D-CB18-45D9-9D81-529640356091}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{D32D914D-CB18-45D9-9D81-529640356091}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{DD24F6F9-7FA1-48C5-BB8C-1698CAE8C582}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BL", "BL\BL.csproj", "{DD24F6F9-7FA1-48C5-BB8C-1698CAE8C582}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "ClassLibrary1\UI.csproj", "{1F75DC1D-6E6C-4545-B76C-833BFE7EF4DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI", "ClassLibrary1\UI.csproj", "{1F75DC1D-6E6C-4545-B76C-833BFE7EF4DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{F5A75143-B5A0-4602-8A51-513FC95A11E1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1F75DC1D-6E6C-4545-B76C-833BFE7EF4DD} = {1F75DC1D-6E6C-4545-B76C-833BFE7EF4DD}
+		{D32D914D-CB18-45D9-9D81-529640356091} = {D32D914D-CB18-45D9-9D81-529640356091}
+		{360117B1-04EB-4D58-AA9B-C1BBC453AEE9} = {360117B1-04EB-4D58-AA9B-C1BBC453AEE9}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +56,10 @@ Global
 		{1F75DC1D-6E6C-4545-B76C-833BFE7EF4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F75DC1D-6E6C-4545-B76C-833BFE7EF4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F75DC1D-6E6C-4545-B76C-833BFE7EF4DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A75143-B5A0-4602-8A51-513FC95A11E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A75143-B5A0-4602-8A51-513FC95A11E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A75143-B5A0-4602-8A51-513FC95A11E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A75143-B5A0-4602-8A51-513FC95A11E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

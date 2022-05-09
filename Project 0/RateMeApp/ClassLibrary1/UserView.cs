@@ -32,7 +32,7 @@ namespace UI
 
             public string UserChoice()
             {
-            const string connectionStringFilePath = "../../../../connections.txt";
+            const string connectionStringFilePath = "../connections.txt";
             string connectionString = File.ReadAllText(connectionStringFilePath);
 
             // Console.ReadLine returns null if redirecting from a file and the file ends
